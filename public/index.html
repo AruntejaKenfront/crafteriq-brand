@@ -170,12 +170,27 @@ body{padding-top:56px}
 .sf-tagline{font-family:'Instrument Serif',serif;font-size:16px;color:var(--a2);font-style:italic;margin-bottom:24px}
 .sf-links{display:flex;justify-content:center;gap:24px;margin-bottom:24px}.sf-links a{font-size:11px;color:var(--sl);text-decoration:none;letter-spacing:.5px;transition:color .2s}.sf-links a:hover{color:var(--a)}
 .sf-copy{font-size:10px;color:var(--sl);opacity:.5;letter-spacing:1px}
-.full-logo{display:flex;align-items:center;gap:16px}
-.full-logo svg{width:56px;height:56px;flex-shrink:0}
+.full-logo{display:flex;align-items:center;gap:18px}
+.full-logo svg{width:64px;height:64px;flex-shrink:0}
 .full-logo-text{display:flex;flex-direction:column}
-.full-logo-text .fl-name{font-family:'DM Sans',sans-serif;font-size:32px;font-weight:500;letter-spacing:-.8px;line-height:1}
+.full-logo-text .fl-name{font-family:'DM Sans',sans-serif;font-size:36px;font-weight:500;letter-spacing:-.8px;line-height:1}
 .full-logo-text .fl-name b{font-weight:700;color:var(--a)}
-.full-logo-text .fl-tag{font-family:'Inter',sans-serif;font-size:10px;color:var(--sl);letter-spacing:2.5px;text-transform:uppercase;margin-top:4px}
+.full-logo-text .fl-tag{font-family:'Inter',sans-serif;font-size:10px;color:var(--sl);letter-spacing:2.5px;text-transform:uppercase;margin-top:5px}
+
+.rationale{background:var(--lt);border-radius:var(--r-xl);padding:48px 44px;margin-top:48px}
+.rationale h3{font-family:'Instrument Serif',serif;font-size:28px;color:var(--d);margin-bottom:24px;letter-spacing:-.5px}
+.rat-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media(max-width:768px){.rat-grid{grid-template-columns:1fr}}
+.rat-item{display:flex;gap:16px;align-items:flex-start}
+.rat-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.rat-icon svg{width:20px;height:20px}
+.rat-body h4{font-size:14px;font-weight:600;color:var(--d);margin-bottom:4px}
+.rat-body p{font-size:12px;color:var(--sl);line-height:1.65}
+.pal-strip{display:flex;gap:6px;margin-top:32px}
+.pal-chip{flex:1;height:56px;border-radius:var(--r-md);display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:500;letter-spacing:.3px;transition:transform .2s var(--ease)}
+.pal-chip:hover{transform:translateY(-3px)}
+.pal-label{margin-top:24px;display:flex;gap:6px;flex-wrap:wrap}
+.pal-tag{padding:4px 10px;border-radius:4px;font-size:9px;font-weight:600;letter-spacing:.5px;background:var(--w);border:1px solid var(--bd);color:var(--d)}
 
 .dl-row{display:flex;gap:10px;margin-top:24px;justify-content:center}
 .dl-btn{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;border-radius:var(--r-sm);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:.4px;cursor:pointer;text-decoration:none;transition:all .2s var(--ease);border:1px solid var(--bd)}
@@ -246,7 +261,7 @@ body{padding-top:56px}
 <div class="s">
   <p class="s-label">01b / Full Logo</p>
   <h2 class="s-title">Mark + Wordmark</h2>
-  <p class="s-desc">The complete logo lockup with mark, wordmark, and tagline. Light and dark variants.</p>
+  <p class="s-desc">The complete logo lockup: mark paired with "CrafterIQ" wordmark and tagline. Vertically centered, proportional spacing. Light and dark variants.</p>
   <div class="g2">
     <div class="card lt" style="padding:48px 40px"><span class="card-lb">Light</span>
       <div class="full-logo">
@@ -271,6 +286,65 @@ body{padding-top:56px}
     <a class="dl-btn lt-btn" onclick="dlSvg('light-full')" href="javascript:void(0)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Full Logo — Light (SVG)</a>
     <a class="dl-btn dk-btn" onclick="dlSvg('dark-full')" href="javascript:void(0)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Full Logo — Dark (SVG)</a>
     <a class="dl-btn mark-btn" onclick="dlSvg('mark')" href="javascript:void(0)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Mark Only (SVG)</a>
+  </div>
+
+  <div class="rationale">
+    <h3>Why This Design Works</h3>
+    <div class="rat-grid">
+      <div class="rat-item">
+        <div class="rat-icon" style="background:rgba(27,43,101,.08)"><svg viewBox="0 0 24 24" fill="none" stroke="#1B2B65" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <div class="rat-body"><h4>The "C" Shell — Chat-Window Shape</h4><p>The open rectangular C doubles as a conversation window, signaling that CrafterIQ is a conversational AI platform. The open right side invites interaction — data flows in, intelligence flows out. Rounded corners and the chat tail ground it as approachable yet professional.</p></div>
+      </div>
+      <div class="rat-item">
+        <div class="rat-icon" style="background:rgba(45,127,249,.08)"><svg viewBox="0 0 24 24" fill="none" stroke="#2D7FF9" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 17V13M12 17V7M17 17V11"/></svg></div>
+        <div class="rat-body"><h4>Three Ascending Bars — Analytics DNA</h4><p>Short, medium, tall — the bars encode growth and data analysis at a glance. Placed inside the C, they show analytics is the core of the product. Progressive opacity (100% → 68%) adds dimensionality without clutter. This is the "Crafter" part: we craft insights from raw data.</p></div>
+      </div>
+      <div class="rat-item">
+        <div class="rat-icon" style="background:rgba(90,176,255,.1)"><svg viewBox="0 0 24 24" fill="none" stroke="#5AB0FF" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <div class="rat-body"><h4>Growth Trend Curve — Upward Trajectory</h4><p>The sweeping curve from bottom-left to top-right is the universal symbol for growth and positive outcomes. It crosses all three bars, unifying them into a single narrative: your spend data trends upward toward savings and optimization. The gradient (light blue → accent blue) reinforces forward momentum.</p></div>
+      </div>
+      <div class="rat-item">
+        <div class="rat-icon" style="background:rgba(45,127,249,.08)"><svg viewBox="0 0 24 24" fill="none" stroke="#2D7FF9" stroke-width="2" stroke-linecap="round"><path d="M12 2L9 9H2l5.5 4.5L5 22l7-5 7 5-2.5-8.5L22 9h-7z"/></svg></div>
+        <div class="rat-body"><h4>AI Sparkle Star — Intelligence Signal</h4><p>The 4-point star with glow center is the industry-recognized AI indicator. Positioned at the top-right of the C, it marks this as an AI-powered platform without being heavy-handed. The micro sparkle and dot accent add depth and polish, signaling precision and sophistication — the "IQ" in CrafterIQ.</p></div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:40px">Color Palette — Why These Colors</h3>
+    <div class="pal-strip">
+      <div class="pal-chip" style="background:#1B2B65;color:rgba(255,255,255,.7)">#1B2B65</div>
+      <div class="pal-chip" style="background:#142050;color:rgba(255,255,255,.6)">#142050</div>
+      <div class="pal-chip" style="background:#2D7FF9;color:#fff">#2D7FF9</div>
+      <div class="pal-chip" style="background:#5AB0FF;color:#fff">#5AB0FF</div>
+      <div class="pal-chip" style="background:#2A3F8F;color:rgba(255,255,255,.7)">#2A3F8F</div>
+      <div class="pal-chip" style="background:#94A3B8;color:#fff">#94A3B8</div>
+    </div>
+    <div class="rat-grid" style="margin-top:28px">
+      <div class="rat-item">
+        <div class="rat-icon" style="background:#1B2B65"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/></svg></div>
+        <div class="rat-body"><h4>Navy Primary (#1B2B65) — Trust &amp; Authority</h4><p>Deep navy conveys enterprise-grade trust, institutional authority, and financial seriousness. It says "we handle your money data responsibly." This is the shell, the tall bar, the foundation — used for primary UI elements, text, and navigation. It outperforms generic black by adding warmth and depth.</p></div>
+      </div>
+      <div class="rat-item">
+        <div class="rat-icon" style="background:#2D7FF9"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></svg></div>
+        <div class="rat-body"><h4>Electric Blue (#2D7FF9) — Action &amp; Intelligence</h4><p>The vibrant accent blue signals technology, AI, and actionable intelligence. It's used for the "IQ" in the wordmark, CTAs, active states, and interactive elements. It creates instant visual hierarchy against the navy and provides the energy the brand needs — smart, modern, and decisive. Avoids the overused purple-AI cliché.</p></div>
+      </div>
+      <div class="rat-item">
+        <div class="rat-icon" style="background:#5AB0FF"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div>
+        <div class="rat-body"><h4>Sky Blue (#5AB0FF) — Clarity &amp; Optimism</h4><p>The lighter blue serves as the gradient endpoint, providing visual breathing room and optimism. It's used in bar highlights, trend start points, and micro sparkles. Combined with the electric blue in gradients, it creates a sense of progression — from data (raw) to insight (refined). This gradient pair is the signature of the brand.</p></div>
+      </div>
+      <div class="rat-item">
+        <div class="rat-icon" style="background:#94A3B8"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></div>
+        <div class="rat-body"><h4>Slate (#94A3B8) — Supporting &amp; Secondary</h4><p>The neutral slate handles all supporting text, labels, timestamps, and subtle UI elements. It prevents visual competition with the primary navy and accent blue, keeping the hierarchy clean. Used for the tagline, descriptions, and metadata — present but never dominant.</p></div>
+      </div>
+    </div>
+    <div class="pal-label">
+      <span class="pal-tag">Enterprise Trust</span>
+      <span class="pal-tag">AI-Native</span>
+      <span class="pal-tag">Financial Precision</span>
+      <span class="pal-tag">Not Generic SaaS</span>
+      <span class="pal-tag">Blue Spectrum Only</span>
+      <span class="pal-tag">Zero Purple</span>
+      <span class="pal-tag">Avoids Startup Clichés</span>
+    </div>
   </div>
 </div>
 <div class="divider"></div>
@@ -369,7 +443,7 @@ body{padding-top:56px}
   <div class="sf-links"><a href="#">Brand Guidelines</a><a href="#">Logo Downloads</a><a href="#">Color Palette</a><a href="https://app.crafteriq.cloud">Launch App</a></div>
   <div class="sf-copy">&copy; 2025 CrafterIQ Inc. All rights reserved.</div>
 </div>
-<script>
+<script>/* v3 — no tagline in downloads */
 function dlSvg(type){
   var defs='<defs>'+
     '<linearGradient id="G" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#2068E0"/><stop offset="40%" stop-color="#2D7FF9"/><stop offset="100%" stop-color="#5AB0FF"/></linearGradient>'+
