@@ -1,0 +1,54 @@
+{
+  "brand": "CrafterIQ",
+  "version": "1.0.0",
+  "colors": {
+    "primary": {
+      "name": "Deep Sapphire",
+      "hex": "#1B2B65",
+      "rgb": [27, 43, 101],
+      "usage": "Logo mark, headings, primary CTAs, navigation"
+    },
+    "accent": {
+      "name": "Electric Blue",
+      "hex": "#2D7FF9",
+      "rgb": [45, 127, 249],
+      "usage": "Interactive elements, IQ highlight, links, focus rings"
+    },
+    "accentHover": {
+      "name": "Pressed Blue",
+      "hex": "#1A6BE0",
+      "rgb": [26, 107, 224],
+      "usage": "Hover and active states for accent elements"
+    },
+    "dark": {
+      "name": "Graphite",
+      "hex": "#1A1A2E",
+      "rgb": [26, 26, 46],
+      "usage": "Body text, dark backgrounds, footer"
+    },
+    "slate": {
+      "name": "Soft Slate",
+      "hex": "#94A3B8",
+      "rgb": [148, 163, 184],
+      "usage": "Secondary text, borders, placeholders"
+    },
+    "light": {
+      "name": "Cloud",
+      "hex": "#F5F6FA",
+      "rgb": [245, 246, 250],
+      "usage": "Page backgrounds, card surfaces"
+    },
+    "white": {
+      "name": "Pure White",
+      "hex": "#FFFFFF",
+      "rgb": [255, 255, 255],
+      "usage": "Clean backgrounds, card interiors"
+    },
+    "border": {
+      "name": "Mist",
+      "hex": "#E2E8F0",
+      "rgb": [226, 232, 240],
+      "usage": "Subtle dividers and borders"
+    }
+  }
+}

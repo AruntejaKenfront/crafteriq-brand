@@ -1,0 +1,37 @@
+:root {
+  /* === CrafterIQ Brand Palette === */
+
+  /* Primary */
+  --ciq-primary:        #1B2B65;  /* Deep Sapphire – logo, headings, primary CTAs */
+  --ciq-primary-rgb:    27, 43, 101;
+
+  /* Accent */
+  --ciq-accent:         #2D7FF9;  /* Electric Blue – interactive elements, IQ highlight */
+  --ciq-accent-rgb:     45, 127, 249;
+  --ciq-accent-hover:   #1A6BE0;  /* Darker accent for hover states */
+
+  /* Neutrals */
+  --ciq-dark:           #1A1A2E;  /* Graphite – body text, dark backgrounds */
+  --ciq-dark-rgb:       26, 26, 46;
+  --ciq-slate:          #94A3B8;  /* Soft Slate – secondary text, borders */
+  --ciq-light:          #F5F6FA;  /* Cloud – backgrounds, cards */
+  --ciq-white:          #FFFFFF;  /* Pure White – clean backgrounds */
+
+  /* Extended (derived) */
+  --ciq-primary-light:  #2A3F8F;  /* Lighter primary for secondary buttons */
+  --ciq-accent-soft:    rgba(45, 127, 249, 0.08);  /* Accent tint for backgrounds */
+  --ciq-border:         #E2E8F0;  /* Subtle borders */
+  --ciq-shadow:         rgba(27, 43, 101, 0.06);    /* Elevation shadow */
+
+  /* Typography */
+  --ciq-font:           'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ciq-font-mono:      'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+
+  /* Radii */
+  --ciq-radius-sm:      6px;
+  --ciq-radius-md:      10px;
+  --ciq-radius-lg:      16px;
+
+  /* Transitions */
+  --ciq-ease:           cubic-bezier(0.25, 0.1, 0.25, 1);
+}

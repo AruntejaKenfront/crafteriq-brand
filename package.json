@@ -1,0 +1,11 @@
+{
+  "name": "crafteriq-brand",
+  "version": "1.0.0",
+  "description": "CrafterIQ Brand Identity System — Vercel-ready static site",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve public -l 3001",
+    "build": "echo 'Static site — no build needed'",
+    "start": "npx serve public -l 3001"
+  }
+}

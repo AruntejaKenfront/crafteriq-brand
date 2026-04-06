@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0F20"/>
+      <stop offset="30%" stop-color="#162350"/>
+      <stop offset="60%" stop-color="#1B2B65"/>
+      <stop offset="100%" stop-color="#0A0F20"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="32%">
+      <stop offset="0%" stop-color="#2D7FF9" stop-opacity="0.10"/>
+      <stop offset="60%" stop-color="#2D7FF9" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#2D7FF9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="innerGlow" cx="50%" cy="38%" r="18%">
+      <stop offset="0%" stop-color="#2D7FF9" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#2D7FF9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0A0F20" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0A0F20" stop-opacity="0.55"/>
+    </radialGradient>
+    <linearGradient id="ciq-g" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#2068E0"/>
+      <stop offset="40%" stop-color="#2D7FF9"/>
+      <stop offset="100%" stop-color="#5AB0FF"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap');
+    </style>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="600" cy="260" rx="380" ry="230" fill="url(#glow)"/>
+  <ellipse cx="600" cy="240" rx="200" ry="140" fill="url(#innerGlow)"/>
+
+  <g stroke="#2D7FF9" stroke-opacity="0.025" stroke-width="0.8">
+    <line x1="100" y1="0" x2="100" y2="630"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="500" y1="0" x2="500" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="700" y1="0" x2="700" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+    <line x1="1100" y1="0" x2="1100" y2="630"/>
+    <line x1="0" y1="70" x2="1200" y2="70"/>
+    <line x1="0" y1="140" x2="1200" y2="140"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="280" x2="1200" y2="280"/>
+    <line x1="0" y1="350" x2="1200" y2="350"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="490" x2="1200" y2="490"/>
+    <line x1="0" y1="560" x2="1200" y2="560"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M 180,400 Q 350,340 480,300 T 600,260" stroke="#2D7FF9" stroke-opacity="0.06" stroke-width="1.2"/>
+    <path d="M 250,480 Q 400,400 530,330 T 620,270" stroke="#2D7FF9" stroke-opacity="0.04" stroke-width="1"/>
+    <path d="M 600,260 Q 750,230 850,200 T 1020,160" stroke="#2D7FF9" stroke-opacity="0.06" stroke-width="1.2"/>
+    <path d="M 580,270 Q 720,250 860,220 T 980,180" stroke="#2D7FF9" stroke-opacity="0.04" stroke-width="1"/>
+  </g>
+
+  <g fill="#2D7FF9">
+    <circle cx="200" cy="180" r="1.5" opacity="0.15"/>
+    <circle cx="340" cy="240" r="2" opacity="0.20"/>
+    <circle cx="480" cy="300" r="2.5" opacity="0.25"/>
+    <circle cx="380" cy="360" r="1.5" opacity="0.12"/>
+    <circle cx="520" cy="200" r="2" opacity="0.18"/>
+    <circle cx="680" cy="180" r="2" opacity="0.22"/>
+    <circle cx="760" cy="240" r="2.5" opacity="0.20"/>
+    <circle cx="860" cy="200" r="1.5" opacity="0.15"/>
+    <circle cx="940" cy="280" r="2" opacity="0.12"/>
+    <circle cx="1020" cy="160" r="1.5" opacity="0.10"/>
+    <circle cx="160" cy="440" r="1.5" opacity="0.08"/>
+    <circle cx="1060" cy="400" r="1.5" opacity="0.08"/>
+  </g>
+
+  <g stroke="#2D7FF9" stroke-opacity="0.03" stroke-width="0.5">
+    <line x1="340" y1="240" x2="480" y2="300"/>
+    <line x1="480" y1="300" x2="520" y2="200"/>
+    <line x1="680" y1="180" x2="760" y2="240"/>
+    <line x1="760" y1="240" x2="860" y2="200"/>
+    <line x1="340" y1="240" x2="380" y2="360"/>
+    <line x1="860" y1="200" x2="940" y2="280"/>
+  </g>
+
+  <!-- Central logo mark -->
+  <g transform="translate(510,105) scale(1.15)" filter="url(#softGlow)">
+    <path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212"
+          fill="none" stroke="#FFFFFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 54,212 L 36,238 L 80,212" fill="#FFFFFF"/>
+    <rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#ciq-g)"/>
+    <rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#ciq-g)" opacity="0.68"/>
+    <rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFFFFF"/>
+    <path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56"
+          fill="none" stroke="#2D7FF9" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/>
+  </g>
+
+  <text text-anchor="middle" x="600" y="474"
+        font-family="'Inter', 'SF Pro Display', 'Helvetica Neue', sans-serif"
+        font-size="58" font-weight="500" fill="#FFFFFF" letter-spacing="-1.5">
+    <tspan>Crafter</tspan><tspan font-weight="700" fill="#2D7FF9">IQ</tspan>
+  </text>
+
+  <text text-anchor="middle" x="600" y="518"
+        font-family="'Inter', 'SF Pro Display', 'Helvetica Neue', sans-serif"
+        font-size="14" font-weight="400" fill="#94A3B8" letter-spacing="5">
+    INTELLIGENCE, CRAFTED.
+  </text>
+
+  <rect width="1200" height="630" fill="url(#vignette)"/>
+</svg>

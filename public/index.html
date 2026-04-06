@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CrafterIQ — Brand Identity System</title>
+<meta name="description" content="CrafterIQ Brand Identity — Intelligence, Crafted. Logo system, app mockups, and brand guidelines.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='1' x2='0' y2='0'%3E%3Cstop offset='0%25' stop-color='%232068E0'/%3E%3Cstop offset='40%25' stop-color='%232D7FF9'/%3E%3Cstop offset='100%25' stop-color='%235AB0FF'/%3E%3C/linearGradient%3E%3ClinearGradient id='t' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0%25' stop-color='%235AB0FF'/%3E%3Cstop offset='100%25' stop-color='%232D7FF9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M152,28L70,28Q26,28,26,72L26,168Q26,212,70,212L152,212' fill='none' stroke='%231B2B65' stroke-width='24' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='60' y='154' width='24' height='38' rx='6' fill='url(%23g)'/%3E%3Crect x='92' y='112' width='24' height='80' rx='6' fill='url(%23g)' opacity='.68'/%3E%3Crect x='122' y='70' width='24' height='122' rx='6' fill='%231B2B65'/%3E%3Cpath d='M52,180C66,162,82,134,100,118C118,102,136,74,160,56' fill='none' stroke='url(%23t)' stroke-width='6' stroke-linecap='round'/%3E%3Cpath d='M174,40L168,56L156,60L168,64L174,80L180,64L192,60L180,56Z' fill='%232D7FF9'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--p:#1B2B65;--p2:#142050;--p3:#2A3F8F;--a:#2D7FF9;--a2:#5AB0FF;--a3:#4A94FF;--ah:#1A6BE0;--d:#1A1A2E;--sl:#94A3B8;--lt:#F5F6FA;--w:#FFF;--bd:#E2E8F0;--r-sm:6px;--r-md:10px;--r-lg:16px;--r-xl:24px;--ease:cubic-bezier(.25,.1,.25,1)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--w);color:var(--d);-webkit-font-smoothing:antialiased;line-height:1.6}
+
+.topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--bd);padding:0 40px;height:56px;display:flex;align-items:center;justify-content:space-between}
+.topnav-logo{display:flex;align-items:center;gap:8px}
+.topnav-logo svg{width:28px;height:28px}
+.topnav-logo span{font-size:18px;font-weight:500;color:var(--d);letter-spacing:-.3px}
+.topnav-logo span b{font-weight:700;color:var(--a)}
+.topnav-links{display:flex;gap:6px}
+.topnav-links a{font-size:12px;font-weight:500;color:var(--sl);text-decoration:none;padding:6px 12px;border-radius:6px;transition:all .2s var(--ease);letter-spacing:.3px}
+.topnav-links a:hover,.topnav-links a.act{color:var(--a);background:rgba(45,127,249,.06)}
+body{padding-top:56px}
+
+.hero{background:linear-gradient(150deg,#080E24 0%,#0F1A3E 25%,#1B2B65 55%,#142050 100%);padding:100px 40px 80px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(45,127,249,.08)0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);animation:hg 8s ease-in-out infinite alternate}
+.hero::after{content:'';position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(90,176,255,.05)0%,transparent 70%);top:20%;right:15%;animation:hg 6s ease-in-out infinite alternate-reverse}
+@keyframes hg{0%{opacity:.6;transform:translate(-50%,-50%) scale(1)}100%{opacity:1;transform:translate(-50%,-50%) scale(1.15)}}
+.hero-mark{width:72px;height:72px;margin:0 auto 20px;position:relative;z-index:1;filter:drop-shadow(0 4px 20px rgba(45,127,249,.3));animation:hf 4s ease-in-out infinite}
+@keyframes hf{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.hero h1{font-size:52px;font-weight:600;color:#fff;letter-spacing:-2px;position:relative;z-index:1;line-height:1.1}
+.hero h1 b{font-weight:700;color:var(--a)}
+.hero .tagline{font-family:'Instrument Serif',serif;font-size:22px;color:var(--a2);margin-top:12px;position:relative;z-index:1;font-style:italic;opacity:.9}
+.hero .sub{font-size:12px;color:var(--sl);letter-spacing:4px;text-transform:uppercase;margin-top:16px;position:relative;z-index:1;opacity:.7}
+
+.s{max-width:1280px;margin:0 auto;padding:80px 40px}
+.s-label{font-family:'Instrument Serif',serif;font-size:11px;color:var(--a);letter-spacing:3px;text-transform:uppercase;margin-bottom:6px}
+.s-title{font-family:'Instrument Serif',serif;font-size:40px;color:var(--d);letter-spacing:-1px;margin-bottom:8px;line-height:1.1}
+.s-desc{font-size:14px;color:var(--sl);line-height:1.7;max-width:560px;margin-bottom:48px}
+.divider{width:100%;height:1px;background:var(--bd)}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+@media(max-width:768px){.g2,.g4{grid-template-columns:1fr}}
+
+.card{border-radius:var(--r-xl);padding:56px 36px;display:flex;align-items:center;justify-content:center;position:relative;transition:transform .25s var(--ease),box-shadow .25s var(--ease);margin-bottom:16px}
+.card:hover{transform:translateY(-3px)}
+.card.lt{background:var(--lt);border:1px solid var(--bd)}.card.lt:hover{box-shadow:0 4px 16px rgba(27,43,101,.06)}
+.card.dk{background:var(--d)}.card.dk:hover{box-shadow:0 8px 40px rgba(0,0,0,.25)}
+.card.gr{background:linear-gradient(135deg,#1B2B65,#2D7FF9)}
+.card.pr{background:var(--p)}
+.card-lb{position:absolute;top:12px;left:16px;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;opacity:.35}
+.card.lt .card-lb{color:var(--d)}.card.dk .card-lb,.card.gr .card-lb,.card.pr .card-lb{color:#fff}
+.mark{width:96px;height:96px}
+
+.bw{border-radius:12px;overflow:hidden;box-shadow:0 8px 40px rgba(27,43,101,.1);border:1px solid var(--bd)}
+.bw-bar{background:#F8F9FB;padding:10px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--bd)}
+.bw-dots{display:flex;gap:6px}.bw-dots i{width:10px;height:10px;border-radius:50%;display:block}.bw-dots .r{background:#FF5F57}.bw-dots .y{background:#FFBD2E}.bw-dots .g{background:#28C940}
+.bw-url{flex:1;background:#fff;border:1px solid var(--bd);border-radius:6px;padding:5px 12px;display:flex;align-items:center;gap:7px;font-size:11px;color:var(--sl)}
+.bw-url .fv{width:14px;height:14px;flex-shrink:0}.bw-url .tt{font-size:10px;color:var(--d);font-weight:500}
+.bw-body{background:#fff}
+.mn{padding:14px 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--bd)}
+.mn-l{display:flex;align-items:center;gap:10px}.mn-l .nm{width:24px;height:24px}.mn-l .nn{font-size:15px;font-weight:500;color:var(--d);letter-spacing:-.2px}.mn-l .nn b{font-weight:700;color:var(--a)}
+.mn-links{display:flex;gap:18px;font-size:11px;color:var(--sl);font-weight:500}.mn-links .act{color:var(--a)}
+.mn-cta{padding:6px 16px;border-radius:var(--r-sm);background:var(--a);color:#fff;font-size:10px;font-weight:600;border:none}
+.mn-av{width:28px;height:28px;border-radius:50%;background:var(--p);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:#fff}
+.mn-r{display:flex;align-items:center;gap:12px}
+.mh{background:linear-gradient(150deg,#080E24,#0F1A3E 30%,#1B2B65 60%,#142050);padding:52px 28px;text-align:center;position:relative;overflow:hidden}
+.mh::before{content:'';position:absolute;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(45,127,249,.08)0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%)}
+.mh .hm{width:48px;height:48px;margin:0 auto 14px;position:relative;z-index:1;filter:drop-shadow(0 2px 8px rgba(45,127,249,.3))}
+.mh .hw{font-size:28px;font-weight:500;color:#fff;letter-spacing:-.8px;position:relative;z-index:1}.mh .hw b{font-weight:700;color:var(--a)}
+.mh .ht{font-size:10px;color:var(--sl);letter-spacing:2.5px;text-transform:uppercase;margin-top:10px;position:relative;z-index:1}
+.mh .ht2{font-family:'Instrument Serif',serif;font-size:16px;color:var(--a2);margin-top:6px;position:relative;z-index:1;font-style:italic}
+.mc{padding:24px;display:flex;flex-direction:column;gap:10px}.mc .bar{height:8px;border-radius:4px;background:var(--lt)}.mc .w90{width:90%}.mc .w70{width:70%}.mc .w80{width:80%}.mc .w50{width:50%}
+.mf{background:var(--d);padding:16px 28px;display:flex;align-items:center;justify-content:space-between}
+.mf-l{display:flex;align-items:center;gap:8px}.mf-l .fm{width:16px;height:16px}.mf-l .fn{font-size:11px;color:#fff;font-weight:500}.mf-l .fn b{color:var(--a);font-weight:700}
+.mf-r{font-size:9px;color:var(--sl);letter-spacing:.5px;font-style:italic}
+
+.app-frame{border-radius:12px;overflow:hidden;box-shadow:0 8px 40px rgba(27,43,101,.1);border:1px solid var(--bd);background:#fff}
+.app-frame-title{font-size:10px;font-weight:600;color:var(--sl);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px;text-align:center}
+.signin-mock{padding:40px 32px;display:flex;align-items:center;justify-content:center;background:var(--lt);min-height:340px}
+.signin-card{background:#fff;border-radius:var(--r-lg);padding:36px 32px;box-shadow:0 8px 40px rgba(27,43,101,.1);width:300px;text-align:center}
+.signin-card .sc-logo{width:36px;height:36px;margin:0 auto 12px}
+.signin-card h3{font-size:18px;font-weight:600;color:var(--d);margin-bottom:4px}
+.signin-card .sc-sub{font-size:12px;color:var(--sl);margin-bottom:20px}
+.sc-btn{display:flex;align-items:center;justify-content:center;gap:8px;padding:10px;border:1px solid var(--bd);border-radius:var(--r-sm);margin-bottom:8px;font-size:12px;color:var(--d);font-weight:500;background:#fff}
+.sc-btn-icon{width:16px;height:16px;border-radius:3px}
+.sc-or{font-size:11px;color:var(--sl);margin:12px 0;position:relative}.sc-or::before,.sc-or::after{content:'';position:absolute;top:50%;width:35%;height:1px;background:var(--bd)}.sc-or::before{left:0}.sc-or::after{right:0}
+.sc-input{width:100%;padding:10px 14px;border:1px solid var(--bd);border-radius:var(--r-sm);font-size:12px;color:var(--sl);background:#fff;margin-bottom:12px;text-align:left}
+.sc-continue{width:100%;padding:11px;border-radius:var(--r-sm);background:var(--p);color:#fff;font-size:13px;font-weight:600;border:none}
+
+.chat-mock{display:flex;height:380px}
+.chat-sidebar{width:220px;background:var(--lt);border-right:1px solid var(--bd);display:flex;flex-direction:column;flex-shrink:0}
+.cs-header{padding:14px 16px;border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:8px}.cs-header svg{width:22px;height:22px}.cs-header span{font-size:13px;font-weight:600;color:var(--d)}.cs-header span b{color:var(--a);font-weight:700}
+.cs-search{margin:10px 12px;padding:8px 12px;border:1px solid var(--bd);border-radius:var(--r-sm);font-size:11px;color:var(--sl);background:#fff}
+.cs-list{flex:1;padding:6px 8px;overflow:hidden}
+.cs-item{padding:10px 12px;border-radius:var(--r-sm);font-size:11px;color:var(--d);margin-bottom:2px;display:flex;flex-direction:column;gap:2px}
+.cs-item.active{background:rgba(45,127,249,.08);color:var(--a)}
+.cs-item .ci-title{font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cs-item .ci-time{font-size:9px;color:var(--sl)}
+.cs-new{margin:8px 12px 12px;padding:8px;border-radius:var(--r-sm);background:var(--a);color:#fff;font-size:11px;font-weight:600;text-align:center}
+.chat-main{flex:1;display:flex;flex-direction:column}
+.cm-header{padding:12px 20px;border-bottom:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between}.cm-header span{font-size:13px;font-weight:600;color:var(--d)}
+.cm-body{flex:1;padding:20px;display:flex;flex-direction:column;gap:14px;overflow:hidden}
+.cm-msg{max-width:80%;padding:12px 16px;border-radius:14px;font-size:12px;line-height:1.5}
+.cm-msg.user{background:var(--a);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.cm-msg.ai{background:var(--lt);color:var(--d);align-self:flex-start;border-bottom-left-radius:4px}
+.cm-msg.ai .ai-badge{display:inline-flex;align-items:center;gap:4px;font-size:9px;font-weight:600;color:var(--a);letter-spacing:.5px;margin-bottom:4px}.cm-msg.ai .ai-badge svg{width:12px;height:12px}
+.cm-chart{background:var(--lt);border-radius:var(--r-md);padding:14px;margin-top:4px}
+.cm-chart-bars{display:flex;align-items:flex-end;gap:6px;height:60px}.cm-chart-bars .cb{border-radius:3px 3px 0 0;width:100%;background:var(--a)}
+.cm-chart-label{font-size:9px;color:var(--sl);margin-top:6px;text-align:center}
+.cm-input{padding:12px 20px;border-top:1px solid var(--bd);display:flex;align-items:center;gap:10px}
+.cm-input-box{flex:1;padding:10px 14px;border:1px solid var(--bd);border-radius:20px;font-size:12px;color:var(--sl);background:var(--lt)}
+.cm-input-send{width:32px;height:32px;border-radius:50%;background:var(--a);display:flex;align-items:center;justify-content:center}.cm-input-send svg{width:14px;height:14px;fill:#fff}
+
+.dash-header{padding:14px 20px;border-bottom:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between}.dash-header h4{font-size:15px;font-weight:600;color:var(--d)}.dash-header h4 span{color:var(--sl);font-weight:400}
+.dash-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:16px 20px}
+.dk{background:var(--lt);border-radius:var(--r-md);padding:16px}.dk-val{font-size:22px;font-weight:700;color:var(--d);letter-spacing:-.5px}.dk-label{font-size:10px;color:var(--sl);margin-top:2px}.dk-delta{font-size:10px;font-weight:600;margin-top:6px}.dk-delta.up{color:#10B981}.dk-delta.dn{color:#EF4444}
+.dash-charts{padding:0 20px 20px;display:grid;grid-template-columns:2fr 1fr;gap:12px}
+.dc{background:var(--lt);border-radius:var(--r-md);padding:16px}.dc-title{font-size:11px;font-weight:600;color:var(--d);margin-bottom:12px}
+.dc-lines{display:flex;flex-direction:column;gap:6px}.dc-line{height:6px;border-radius:3px;background:var(--bd)}.dc-line.a1{width:85%;background:linear-gradient(90deg,var(--a),var(--a2))}.dc-line.a2{width:65%;background:linear-gradient(90deg,var(--a),var(--a2));opacity:.6}.dc-line.a3{width:45%;background:linear-gradient(90deg,var(--a),var(--a2));opacity:.35}
+.dc-pie{width:80px;height:80px;border-radius:50%;background:conic-gradient(var(--a) 0% 42%,var(--a2) 42% 68%,var(--bd) 68% 100%);margin:0 auto}
+.boards-mock{padding:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.brd{background:var(--lt);border-radius:var(--r-md);padding:16px}.brd-title{font-size:12px;font-weight:600;color:var(--d);margin-bottom:8px;display:flex;align-items:center;gap:6px}.brd-title .brd-dot{width:8px;height:8px;border-radius:50%}
+.brd-pins{display:flex;flex-direction:column;gap:4px}.brd-pin{height:24px;border-radius:4px;background:var(--w);border:1px solid var(--bd);display:flex;align-items:center;padding:0 8px;font-size:9px;color:var(--sl)}
+
+.phone{width:280px;background:#FAFAFA;border-radius:36px;padding:48px 20px 32px;box-shadow:0 16px 64px rgba(27,43,101,.12);position:relative;margin:0 auto;border:1px solid rgba(0,0,0,.04)}
+.phone::before{content:'';position:absolute;top:16px;left:50%;transform:translateX(-50%);width:80px;height:5px;background:#E0E0E0;border-radius:3px}
+.phone::after{content:'';position:absolute;bottom:12px;left:50%;transform:translateX(-50%);width:40px;height:4px;background:#E0E0E0;border-radius:2px}
+.pg{display:grid;grid-template-columns:repeat(4,1fr);gap:18px 14px;padding:14px 8px}
+.pa{display:flex;flex-direction:column;align-items:center;gap:6px}.pa .pi{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;overflow:hidden}.pa .pl{font-family:'Inter',sans-serif;font-size:9px;color:#888;text-align:center;max-width:52px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gi{background:#E8E8EC}.gi.bl{background:#D4E4FF}.gi.gn{background:#D4F0E0}.gi.pu{background:#E4D8F4}.gi.or{background:#FFE4D0}.gi.rd{background:#FFD8D8}.gi.tl{background:#D0F0F0}
+
+.ai-icon{display:flex;align-items:center;justify-content:center;overflow:hidden}.ai-icon.ios{border-radius:22.37%}.ai-icon.and{border-radius:28%}.ai-icon.cir{border-radius:50%}
+.ai-icon.bgp{background:var(--p);box-shadow:0 4px 20px rgba(27,43,101,.3)}.ai-icon.bgg{background:linear-gradient(135deg,#1B2B65,#2D7FF9);box-shadow:0 4px 20px rgba(45,127,249,.25)}.ai-icon.bgw{background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.ig{display:flex;flex-direction:column;align-items:center;gap:8px}.ig .il{font-size:9px;color:var(--sl);letter-spacing:1.5px;text-transform:uppercase}.ig .is{font-size:8px;color:#B0B8C8;letter-spacing:1px}
+
+.sl-card{width:340px;background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 4px 16px rgba(27,43,101,.06);border:1px solid var(--bd)}
+.sl-h{padding:22px;display:flex;gap:16px;align-items:center}
+.sl-ic{width:68px;height:68px;border-radius:16px;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.sl-info h4{font-size:17px;font-weight:600;color:var(--d);margin-bottom:2px}.sl-info h4 b{color:var(--a);font-weight:700}.sl-info .dv{font-size:11px;color:var(--a);margin-bottom:4px}.sl-info .rt{font-size:11px;color:var(--sl);display:flex;align-items:center;gap:4px}.sl-info .st{color:#FFC107}
+.sl-btn{margin:0 22px 18px;padding:12px;border-radius:var(--r-md);background:var(--a);color:#fff;text-align:center;font-size:14px;font-weight:600}
+
+.bc{width:340px;height:200px;background:linear-gradient(145deg,var(--d),#0D1226);border-radius:14px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 16px 64px rgba(27,43,101,.12);position:relative;overflow:hidden}
+.bc::before{content:'';position:absolute;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(45,127,249,.05)0%,transparent 70%);top:-40px;right:-40px}
+.bc-logo{display:flex;align-items:center;gap:10px}.bc-logo .bm{width:28px;height:28px}.bc-logo .bn{font-size:18px;font-weight:500;color:#fff;letter-spacing:-.2px}.bc-logo .bn b{font-weight:700;color:var(--a)}
+.bc-det{color:var(--sl);font-size:11px;line-height:1.8}.bc-det strong{color:#fff;font-weight:500}
+.bc-tag{font-size:8px;color:var(--a);letter-spacing:2.5px;text-transform:uppercase;opacity:.6}
+
+.es{display:flex;align-items:flex-start;gap:18px;padding:22px;border-left:3px solid var(--a);background:var(--lt);border-radius:0 14px 14px 0;max-width:420px}
+.es .em{width:44px;height:44px;flex-shrink:0}
+.es-info .en{font-size:15px;font-weight:600;color:var(--d)}.es-info .en b{color:var(--a);font-weight:700}
+.es-info .et{font-size:10px;color:var(--sl);margin-top:2px}.es-info .el{font-size:10px;color:var(--a);margin-top:6px;text-decoration:none}.es-info .etag{font-size:9px;color:var(--sl);font-style:italic;margin-top:4px}
+
+.og{width:100%;aspect-ratio:1200/630;background:linear-gradient(150deg,#080E24,#0F1A3E 30%,#1B2B65 60%,#142050);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden}
+.og::before{content:'';position:absolute;width:250px;height:250px;border-radius:50%;background:radial-gradient(circle,rgba(45,127,249,.08)0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%)}
+.og .om{width:44px;height:44px;position:relative;z-index:1;filter:drop-shadow(0 2px 8px rgba(45,127,249,.3))}.og .ow{font-size:24px;font-weight:500;color:#fff;letter-spacing:-.5px;position:relative;z-index:1}.og .ow b{font-weight:700;color:var(--a)}.og .ot{font-size:9px;color:var(--sl);letter-spacing:2px;text-transform:uppercase;position:relative;z-index:1}
+
+.ld{width:280px;height:220px;background:linear-gradient(150deg,var(--d),#0D1226);border-radius:var(--r-lg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;position:relative;overflow:hidden}
+.ld::before{content:'';position:absolute;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(45,127,249,.06)0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%)}
+.ld .lm{width:52px;height:52px;position:relative;z-index:1;animation:pm 2s ease-in-out infinite;filter:drop-shadow(0 2px 12px rgba(45,127,249,.3))}
+.ld .lw{font-size:20px;font-weight:500;color:#fff;letter-spacing:-.5px;position:relative;z-index:1}.ld .lw b{font-weight:700;color:var(--a)}.ld .lt2{font-size:8px;color:var(--sl);letter-spacing:2px;text-transform:uppercase;position:relative;z-index:1}
+.ld .ld-bar{width:120px;height:3px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden;position:relative;z-index:1}.ld .ld-bar-fill{width:65%;height:100%;background:var(--a);border-radius:2px;animation:lp 2s ease-in-out infinite}
+@keyframes pm{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.7;transform:scale(1.06)}}
+@keyframes lp{0%{width:0}50%{width:80%}100%{width:100%}}
+
+.flex-center{display:flex;justify-content:center;gap:44px;flex-wrap:wrap}
+.flex-center-sm{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;align-items:flex-start}
+.site-footer{background:var(--d);padding:48px 40px 32px;text-align:center}
+.sf-logo{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:12px}.sf-logo svg{width:32px;height:32px}.sf-logo span{font-size:22px;font-weight:500;color:#fff}.sf-logo span b{font-weight:700;color:var(--a)}
+.sf-tagline{font-family:'Instrument Serif',serif;font-size:16px;color:var(--a2);font-style:italic;margin-bottom:24px}
+.sf-links{display:flex;justify-content:center;gap:24px;margin-bottom:24px}.sf-links a{font-size:11px;color:var(--sl);text-decoration:none;letter-spacing:.5px;transition:color .2s}.sf-links a:hover{color:var(--a)}
+.sf-copy{font-size:10px;color:var(--sl);opacity:.5;letter-spacing:1px}
+.full-logo{display:flex;align-items:center;gap:16px}
+.full-logo svg{width:56px;height:56px;flex-shrink:0}
+.full-logo-text{display:flex;flex-direction:column}
+.full-logo-text .fl-name{font-family:'DM Sans',sans-serif;font-size:32px;font-weight:500;letter-spacing:-.8px;line-height:1}
+.full-logo-text .fl-name b{font-weight:700;color:var(--a)}
+.full-logo-text .fl-tag{font-family:'Inter',sans-serif;font-size:10px;color:var(--sl);letter-spacing:2.5px;text-transform:uppercase;margin-top:4px}
+
+.dl-row{display:flex;gap:10px;margin-top:24px;justify-content:center}
+.dl-btn{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;border-radius:var(--r-sm);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:.4px;cursor:pointer;text-decoration:none;transition:all .2s var(--ease);border:1px solid var(--bd)}
+.dl-btn svg{width:14px;height:14px;flex-shrink:0}
+.dl-btn.lt-btn{background:var(--w);color:var(--d)}.dl-btn.lt-btn:hover{background:var(--lt);border-color:var(--a);color:var(--a)}
+.dl-btn.dk-btn{background:var(--d);color:#fff;border-color:rgba(255,255,255,.12)}.dl-btn.dk-btn:hover{background:#242444;border-color:var(--a)}
+.dl-btn.mark-btn{background:transparent;color:var(--a);border-color:var(--a)}.dl-btn.mark-btn:hover{background:rgba(45,127,249,.06)}
+</style>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <linearGradient id="G" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#2068E0"/><stop offset="40%" stop-color="#2D7FF9"/><stop offset="100%" stop-color="#5AB0FF"/></linearGradient>
+    <linearGradient id="T" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#5AB0FF"/><stop offset="100%" stop-color="#2D7FF9"/></linearGradient>
+    <linearGradient id="S" x1="0" y1="0" x2=".15" y2="1"><stop offset="0%" stop-color="#1F3375"/><stop offset="50%" stop-color="#1B2B65"/><stop offset="100%" stop-color="#142050"/></linearGradient>
+    <linearGradient id="SG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5AB0FF"/><stop offset="100%" stop-color="#2D7FF9"/></linearGradient>
+  </defs>
+</svg>
+
+<!-- V2 MARK SNIPPET (light): M=shell+inner+highlight+tail | B=bars+highlights | T=trend+arrow | S=star+micro+dot -->
+<!-- LIGHT: stroke url(#S), tall bar #1B2B65 -->
+<!-- DARK:  stroke #FFF, tall bar #FFF -->
+<!-- ICON:  thicker strokes, no micro details -->
+
+<nav class="topnav">
+  <div class="topnav-logo">
+    <svg viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#1B2B65" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 54,212 L 36,238 L 80,212" fill="#1B2B65"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#1B2B65"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/></svg>
+    <span>Crafter<b>IQ</b></span>
+  </div>
+  <div class="topnav-links">
+    <a href="#marks" class="act">Logo</a>
+    <a href="#website">Website</a>
+    <a href="#appflow">App Flow</a>
+    <a href="#icons">Icons</a>
+    <a href="#collateral">Collateral</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <svg class="hero-mark" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 150,42 L 74,42 Q 42,42 42,76 L 42,164 Q 42,198 74,198 L 150,198" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M 140,28 L 70,28 Q 26,28 26,72 L 26,100" fill="none" stroke="rgba(255,255,255,.2)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/><path d="M 54,212 L 36,238 L 80,212" fill="#FFF"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/><rect x="58" y="154" width="5" height="38" rx="2.5" fill="#5AB0FF" opacity=".28"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/><rect x="89" y="112" width="5" height="80" rx="2.5" fill="#5AB0FF" opacity=".22"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFF"/><rect x="120" y="70" width="5" height="122" rx="2.5" fill="rgba(255,255,255,.15)"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/><polygon points="158,56 150,62 153,70" fill="#2D7FF9" opacity=".65"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="url(#SG)"/><circle cx="172" cy="57.5" r="2.2" fill="#FFF" opacity=".5"/><path d="M 190,78 L 189,82.5 L 184.5,84 L 189,85.5 L 190,90 L 191,85.5 L 195.5,84 L 191,82.5 Z" fill="#2D7FF9" opacity=".35"/><circle cx="182" cy="34" r="1.4" fill="#5AB0FF" opacity=".25"/></svg>
+  <h1>Crafter<b>IQ</b></h1>
+  <div class="tagline">Intelligence, Crafted.</div>
+  <p class="sub">Brand Identity System</p>
+</div>
+
+<!-- 01 MARKS -->
+<div class="s" id="marks">
+  <p class="s-label">01 / Brand Mark</p>
+  <h2 class="s-title">The Mark</h2>
+  <p class="s-desc">Rectangular chat-window C with gradient shell, inner depth stroke, edge catch-light. Three ascending analytics bars with left-edge highlights. Gradient growth trend with arrow tip. 4-point AI star with glow center, micro sparkle, and dot accent.</p>
+  <div class="g4">
+    <div class="card lt"><span class="card-lb">Light</span>
+      <svg class="mark" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="url(#S)" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 150,42 L 74,42 Q 42,42 42,76 L 42,164 Q 42,198 74,198 L 150,198" fill="none" stroke="#2A3F8F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".18"/><path d="M 140,28 L 70,28 Q 26,28 26,72 L 26,100" fill="none" stroke="#3A5099" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity=".25"/><path d="M 54,212 L 36,238 L 80,212" fill="url(#S)"/><path d="M 58,212 L 48,228 L 76,212" fill="#2A3F8F" opacity=".12"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/><rect x="58" y="154" width="5" height="38" rx="2.5" fill="#5AB0FF" opacity=".28"/><rect x="76" y="154" width="2" height="38" rx="1" fill="#1B2B65" opacity=".08"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/><rect x="89" y="112" width="5" height="80" rx="2.5" fill="#5AB0FF" opacity=".22"/><rect x="107" y="112" width="2" height="80" rx="1" fill="#1B2B65" opacity=".06"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#1B2B65"/><rect x="120" y="70" width="5" height="122" rx="2.5" fill="#2A3F8F" opacity=".2"/><rect x="138" y="70" width="2" height="122" rx="1" fill="#0F1A3E" opacity=".1"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/><polygon points="158,56 150,62 153,70" fill="#2D7FF9" opacity=".65"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="url(#SG)"/><circle cx="172" cy="57.5" r="2.2" fill="#FFF" opacity=".5"/><path d="M 190,78 L 189,82.5 L 184.5,84 L 189,85.5 L 190,90 L 191,85.5 L 195.5,84 L 191,82.5 Z" fill="#2D7FF9" opacity=".35"/><circle cx="182" cy="34" r="1.4" fill="#5AB0FF" opacity=".25"/></svg>
+    </div>
+    <div class="card dk"><span class="card-lb">Dark</span>
+      <svg class="mark" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 150,42 L 74,42 Q 42,42 42,76 L 42,164 Q 42,198 74,198 L 150,198" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M 140,28 L 70,28 Q 26,28 26,72 L 26,100" fill="none" stroke="rgba(255,255,255,.2)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/><path d="M 54,212 L 36,238 L 80,212" fill="#FFF"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/><rect x="58" y="154" width="5" height="38" rx="2.5" fill="#5AB0FF" opacity=".28"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/><rect x="89" y="112" width="5" height="80" rx="2.5" fill="#5AB0FF" opacity=".22"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFF"/><rect x="120" y="70" width="5" height="122" rx="2.5" fill="rgba(255,255,255,.15)"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/><polygon points="158,56 150,62 153,70" fill="#2D7FF9" opacity=".65"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="url(#SG)"/><circle cx="172" cy="57.5" r="2.2" fill="#FFF" opacity=".5"/><path d="M 190,78 L 189,82.5 L 184.5,84 L 189,85.5 L 190,90 L 191,85.5 L 195.5,84 L 191,82.5 Z" fill="#2D7FF9" opacity=".35"/><circle cx="182" cy="34" r="1.4" fill="#5AB0FF" opacity=".25"/></svg>
+    </div>
+    <div class="card gr"><span class="card-lb">Gradient</span>
+      <svg class="mark" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 150,42 L 74,42 Q 42,42 42,76 L 42,164 Q 42,198 74,198 L 150,198" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M 54,212 L 36,238 L 80,212" fill="#FFF"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="rgba(255,255,255,.85)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="rgba(255,255,255,.55)"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFF"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="rgba(255,255,255,.9)"/></svg>
+    </div>
+    <div class="card pr"><span class="card-lb">Brand BG</span>
+      <svg class="mark" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 54,212 L 36,238 L 80,212" fill="#FFF"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFF"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/><polygon points="158,56 150,62 153,70" fill="#2D7FF9" opacity=".65"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="url(#SG)"/><circle cx="172" cy="57.5" r="2.2" fill="#FFF" opacity=".5"/></svg>
+    </div>
+  </div>
+</div>
+
+<div class="s">
+  <p class="s-label">01b / Full Logo</p>
+  <h2 class="s-title">Mark + Wordmark</h2>
+  <p class="s-desc">The complete logo lockup with mark, wordmark, and tagline. Light and dark variants.</p>
+  <div class="g2">
+    <div class="card lt" style="padding:48px 40px"><span class="card-lb">Light</span>
+      <div class="full-logo">
+        <svg viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="url(#S)" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 150,42 L 74,42 Q 42,42 42,76 L 42,164 Q 42,198 74,198 L 150,198" fill="none" stroke="#2A3F8F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".18"/><path d="M 140,28 L 70,28 Q 26,28 26,72 L 26,100" fill="none" stroke="#3A5099" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity=".25"/><path d="M 54,212 L 36,238 L 80,212" fill="url(#S)"/><path d="M 58,212 L 48,228 L 76,212" fill="#2A3F8F" opacity=".12"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/><rect x="58" y="154" width="5" height="38" rx="2.5" fill="#5AB0FF" opacity=".28"/><rect x="76" y="154" width="2" height="38" rx="1" fill="#1B2B65" opacity=".08"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/><rect x="89" y="112" width="5" height="80" rx="2.5" fill="#5AB0FF" opacity=".22"/><rect x="107" y="112" width="2" height="80" rx="1" fill="#1B2B65" opacity=".06"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#1B2B65"/><rect x="120" y="70" width="5" height="122" rx="2.5" fill="#2A3F8F" opacity=".2"/><rect x="138" y="70" width="2" height="122" rx="1" fill="#0F1A3E" opacity=".1"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/><polygon points="158,56 150,62 153,70" fill="#2D7FF9" opacity=".65"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="url(#SG)"/><circle cx="172" cy="57.5" r="2.2" fill="#FFF" opacity=".5"/><path d="M 190,78 L 189,82.5 L 184.5,84 L 189,85.5 L 190,90 L 191,85.5 L 195.5,84 L 191,82.5 Z" fill="#2D7FF9" opacity=".35"/><circle cx="182" cy="34" r="1.4" fill="#5AB0FF" opacity=".25"/></svg>
+        <div class="full-logo-text">
+          <span class="fl-name" style="color:#1B2B65">Crafter<b>IQ</b></span>
+          <span class="fl-tag">Intelligence, Crafted.</span>
+        </div>
+      </div>
+    </div>
+    <div class="card dk" style="padding:48px 40px"><span class="card-lb">Dark</span>
+      <div class="full-logo">
+        <svg viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 150,42 L 74,42 Q 42,42 42,76 L 42,164 Q 42,198 74,198 L 150,198" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M 140,28 L 70,28 Q 26,28 26,72 L 26,100" fill="none" stroke="rgba(255,255,255,.2)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/><path d="M 54,212 L 36,238 L 80,212" fill="#FFF"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/><rect x="58" y="154" width="5" height="38" rx="2.5" fill="#5AB0FF" opacity=".28"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/><rect x="89" y="112" width="5" height="80" rx="2.5" fill="#5AB0FF" opacity=".22"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFF"/><rect x="120" y="70" width="5" height="122" rx="2.5" fill="rgba(255,255,255,.15)"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/><polygon points="158,56 150,62 153,70" fill="#2D7FF9" opacity=".65"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="url(#SG)"/><circle cx="172" cy="57.5" r="2.2" fill="#FFF" opacity=".5"/><path d="M 190,78 L 189,82.5 L 184.5,84 L 189,85.5 L 190,90 L 191,85.5 L 195.5,84 L 191,82.5 Z" fill="#2D7FF9" opacity=".35"/><circle cx="182" cy="34" r="1.4" fill="#5AB0FF" opacity=".25"/></svg>
+        <div class="full-logo-text">
+          <span class="fl-name" style="color:#FFF">Crafter<b>IQ</b></span>
+          <span class="fl-tag">Intelligence, Crafted.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dl-row">
+    <a class="dl-btn lt-btn" onclick="dlSvg('light-full')" href="javascript:void(0)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Full Logo — Light (SVG)</a>
+    <a class="dl-btn dk-btn" onclick="dlSvg('dark-full')" href="javascript:void(0)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Full Logo — Dark (SVG)</a>
+    <a class="dl-btn mark-btn" onclick="dlSvg('mark')" href="javascript:void(0)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Mark Only (SVG)</a>
+  </div>
+</div>
+<div class="divider"></div>
+
+<!-- 02 WEBSITE -->
+<div class="s" id="website">
+  <p class="s-label">02 / Website</p>
+  <h2 class="s-title">Browser — Full Page</h2>
+  <p class="s-desc">Favicon, navigation bar, hero section, content, and footer — all with the V2 mark.</p>
+  <div class="bw"><div class="bw-bar"><div class="bw-dots"><i class="r"></i><i class="y"></i><i class="g"></i></div><div class="bw-url"><svg class="fv" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#1B2B65" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/><rect x="60" y="154" width="24" height="38" rx="6" fill="url(#G)"/><rect x="92" y="112" width="24" height="80" rx="6" fill="url(#G)" opacity=".68"/><rect x="124" y="70" width="24" height="122" rx="6" fill="#1B2B65"/><path d="M 52,180 C 66,162 82,134 100,118 C 118,102 136,74 160,56" fill="none" stroke="url(#T)" stroke-width="6" stroke-linecap="round"/><path d="M 174,40 L 168,56 L 156,60 L 168,64 L 174,80 L 180,64 L 192,60 L 180,56 Z" fill="#2D7FF9"/></svg><span class="tt">CrafterIQ</span> app.crafteriq.cloud</div></div><div class="bw-body"><div class="mn"><div class="mn-l"><svg class="nm" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#1B2B65" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 54,212 L 36,238 L 80,212" fill="#1B2B65"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#1B2B65"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/></svg><span class="nn">Crafter<b>IQ</b></span></div><div class="mn-links"><span class="act">Dashboard</span><span>Ask Crafter</span><span>Boards</span><span>Alerts</span></div><div class="mn-r"><div class="mn-av">AT</div></div></div><div class="mh"><svg class="hm" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 54,212 L 36,238 L 80,212" fill="#FFF"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFF"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/></svg><div class="hw">Crafter<b>IQ</b></div><div class="ht2">Intelligence, Crafted.</div><div class="ht">Enterprise AI Analytics Platform</div></div><div class="mc"><div class="bar w90"></div><div class="bar w70"></div><div class="bar w80"></div><div class="bar w50"></div></div><div class="mf"><div class="mf-l"><svg class="fm" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/><rect x="60" y="154" width="24" height="38" rx="6" fill="url(#G)"/><rect x="92" y="112" width="24" height="80" rx="6" fill="url(#G)" opacity=".68"/><rect x="124" y="70" width="24" height="122" rx="6" fill="#FFF"/><path d="M 52,180 C 66,162 82,134 100,118 C 118,102 136,74 160,56" fill="none" stroke="url(#T)" stroke-width="6" stroke-linecap="round"/><path d="M 174,40 L 168,56 L 156,60 L 168,64 L 174,80 L 180,64 L 192,60 L 180,56 Z" fill="#2D7FF9"/></svg><span class="fn">Crafter<b>IQ</b></span></div><div class="mf-r">Intelligence, Crafted.</div></div></div></div>
+</div>
+<div class="divider"></div>
+
+<!-- 03 APP FLOW -->
+<div class="s" id="appflow">
+  <p class="s-label">03 / App Flow</p>
+  <h2 class="s-title">Present App — Real Screens</h2>
+  <p class="s-desc">How the logo appears in the actual CrafterIQ product: Sign-in, Ask Crafter chat, Dashboard, and Boards. Based on app.crafteriq.cloud.</p>
+  <div style="margin-bottom:48px"><div class="app-frame-title">Sign In — Clerk Authentication</div><div class="app-frame"><div class="signin-mock"><div class="signin-card"><svg class="sc-logo" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#1B2B65" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 54,212 L 36,238 L 80,212" fill="#1B2B65"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#1B2B65"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/></svg><h3>Sign in to CrafterIQ</h3><div class="sc-sub">Welcome back! Please sign in to continue</div><div class="sc-btn"><div class="sc-btn-icon" style="background:linear-gradient(135deg,#4285F4,#34A853,#FBBC05,#EA4335);border-radius:50%"></div> Google</div><div class="sc-btn"><div class="sc-btn-icon" style="background:linear-gradient(135deg,#F25022,#7FBA00,#00A4EF,#FFB900)"></div> Microsoft</div><div class="sc-or">or</div><div class="sc-input">Enter your email address</div><div class="sc-continue">Continue</div></div></div></div></div>
+  <div style="margin-bottom:48px"><div class="app-frame-title">Ask Crafter — Conversational Analytics</div><div class="app-frame"><div class="chat-mock"><div class="chat-sidebar"><div class="cs-header"><svg viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#1B2B65" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 54,212 L 36,238 L 80,212" fill="#1B2B65"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#1B2B65"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/></svg><span>Crafter<b style="color:#2D7FF9">IQ</b></span></div><div class="cs-search">Search conversations...</div><div class="cs-list"><div class="cs-item active"><span class="ci-title">Q3 Spend Analysis</span><span class="ci-time">2 min ago</span></div><div class="cs-item"><span class="ci-title">Vendor Comparison 2025</span><span class="ci-time">1 hour ago</span></div><div class="cs-item"><span class="ci-title">Budget vs Actual</span><span class="ci-time">Yesterday</span></div><div class="cs-item"><span class="ci-title">Tail Spend Analysis</span><span class="ci-time">3 days ago</span></div><div class="cs-item"><span class="ci-title">Contract Renewals</span><span class="ci-time">Last week</span></div></div><div class="cs-new">+ New Conversation</div></div><div class="chat-main"><div class="cm-header"><span>Q3 Spend Analysis</span><div class="mn-av" style="width:24px;height:24px;font-size:9px">AT</div></div><div class="cm-body"><div class="cm-msg user">Show me the top 5 vendors by spend in Q3 2025</div><div class="cm-msg ai"><div class="ai-badge"><svg viewBox="0 0 240 240"><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/></svg> CRAFTERIQ</div>Here are the top 5 vendors by spend in Q3 2025. Total addressable spend was $4.2M across 127 unique vendors.<div class="cm-chart"><div class="cm-chart-bars"><div class="cb" style="height:100%"></div><div class="cb" style="height:78%;opacity:.8"></div><div class="cb" style="height:62%;opacity:.65"></div><div class="cb" style="height:48%;opacity:.5"></div><div class="cb" style="height:35%;opacity:.4"></div></div><div class="cm-chart-label">Acme Corp &middot; GlobalTech &middot; DataSync &middot; CloudOps &middot; NetServ</div></div></div><div class="cm-msg user">Pin this to the Q3 Review board</div></div><div class="cm-input"><div class="cm-input-box">Ask anything about your data...</div><div class="cm-input-send"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></div></div></div></div></div></div>
+  <div style="margin-bottom:48px"><div class="app-frame-title">Dashboard — Analytics Overview</div><div class="app-frame"><div class="dash-header"><h4>Dashboard <span>&middot; Q3 2025</span></h4><div class="mn-av" style="width:24px;height:24px;font-size:9px">AT</div></div><div class="dash-kpis"><div class="dk"><div class="dk-val">$4.2M</div><div class="dk-label">Total Spend</div><div class="dk-delta up">+12.3%</div></div><div class="dk"><div class="dk-val">127</div><div class="dk-label">Active Vendors</div><div class="dk-delta dn">-3.1%</div></div><div class="dk"><div class="dk-val">94%</div><div class="dk-label">On-Contract</div><div class="dk-delta up">+5.7%</div></div><div class="dk"><div class="dk-val">$280K</div><div class="dk-label">Savings Found</div><div class="dk-delta up">+18.2%</div></div></div><div class="dash-charts"><div class="dc"><div class="dc-title">Spend by Category</div><div class="dc-lines"><div class="dc-line a1"></div><div class="dc-line a2"></div><div class="dc-line a3"></div><div class="dc-line" style="width:30%"></div><div class="dc-line" style="width:20%"></div></div></div><div class="dc" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px"><div class="dc-title" style="width:100%">Compliance</div><div class="dc-pie"></div><div style="font-size:9px;color:#94A3B8">94% On-Contract</div></div></div></div></div>
+  <div><div class="app-frame-title">Boards — Collaborative Workspace</div><div class="app-frame"><div class="dash-header"><h4>Boards</h4><div class="mn-cta">+ New Board</div></div><div class="boards-mock"><div class="brd"><div class="brd-title"><div class="brd-dot" style="background:#2D7FF9"></div>Q3 Spend Review</div><div class="brd-pins"><div class="brd-pin">Top 5 Vendors Chart</div><div class="brd-pin">Category Breakdown</div><div class="brd-pin">YoY Comparison</div></div></div><div class="brd"><div class="brd-title"><div class="brd-dot" style="background:#10B981"></div>Vendor Negotiations</div><div class="brd-pins"><div class="brd-pin">Contract Expirations</div><div class="brd-pin">Benchmark Analysis</div></div></div><div class="brd"><div class="brd-title"><div class="brd-dot" style="background:#F59E0B"></div>Cost Optimization</div><div class="brd-pins"><div class="brd-pin">Tail Spend Insights</div><div class="brd-pin">Savings Tracker</div><div class="brd-pin">Duplicate Payments</div></div></div></div></div></div>
+</div>
+<div class="divider"></div>
+
+<!-- 04 ICONS -->
+<div class="s" id="icons">
+  <p class="s-label">04 / App Icons</p>
+  <h2 class="s-title">iOS, Android, PWA</h2>
+  <p class="s-desc">Optimized at every scale. Thicker strokes for small sizes, full detail at large.</p>
+  <div class="flex-center-sm">
+    <div class="ig"><div class="ai-icon ios bgp" style="width:108px;height:108px"><svg viewBox="0 0 240 240" style="width:68px"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 54,212 L 36,238 L 80,212" fill="#FFF"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFF"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/></svg></div><span class="il">iOS</span><span class="is">1024px</span></div>
+    <div class="ig"><div class="ai-icon ios bgg" style="width:108px;height:108px"><svg viewBox="0 0 240 240" style="width:68px"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 54,212 L 36,238 L 80,212" fill="#FFF"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="rgba(255,255,255,.85)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="rgba(255,255,255,.55)"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFF"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="rgba(255,255,255,.9)"/></svg></div><span class="il">Gradient</span></div>
+    <div class="ig"><div class="ai-icon and bgp" style="width:92px;height:92px"><svg viewBox="0 0 240 240" style="width:58px"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/><rect x="60" y="154" width="24" height="38" rx="6" fill="url(#G)"/><rect x="92" y="112" width="24" height="80" rx="6" fill="url(#G)" opacity=".68"/><rect x="124" y="70" width="24" height="122" rx="6" fill="#FFF"/><path d="M 52,180 C 66,162 82,134 100,118 C 118,102 136,74 160,56" fill="none" stroke="url(#T)" stroke-width="4.5" stroke-linecap="round"/><path d="M 174,40 L 170,54 L 158,58 L 170,62 L 174,76 L 178,62 L 190,58 L 178,54 Z" fill="#2D7FF9"/></svg></div><span class="il">Android</span><span class="is">512px</span></div>
+    <div class="ig"><div class="ai-icon cir bgw" style="width:92px;height:92px"><svg viewBox="0 0 240 240" style="width:58px"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#1B2B65" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/><rect x="60" y="154" width="24" height="38" rx="6" fill="url(#G)"/><rect x="92" y="112" width="24" height="80" rx="6" fill="url(#G)" opacity=".68"/><rect x="124" y="70" width="24" height="122" rx="6" fill="#1B2B65"/><path d="M 52,180 C 66,162 82,134 100,118 C 118,102 136,74 160,56" fill="none" stroke="url(#T)" stroke-width="4.5" stroke-linecap="round"/><path d="M 174,40 L 170,54 L 158,58 L 170,62 L 174,76 L 178,62 L 190,58 L 178,54 Z" fill="#2D7FF9"/></svg></div><span class="il">PWA</span><span class="is">192px</span></div>
+  </div>
+</div>
+<div class="divider"></div>
+
+<!-- 05 PHONE -->
+<div class="s">
+  <p class="s-label">05 / Home Screen</p>
+  <h2 class="s-title">On Your Phone</h2>
+  <div class="flex-center" style="margin-top:28px">
+    <div class="phone"><div class="pg">
+      <div class="pa"><div class="pi gi gn"></div><span class="pl">Messages</span></div>
+      <div class="pa"><div class="pi gi bl"></div><span class="pl">Mail</span></div>
+      <div class="pa"><div class="pi gi rd"></div><span class="pl">Calendar</span></div>
+      <div class="pa"><div class="pi gi pu"></div><span class="pl">Photos</span></div>
+      <div class="pa"><div class="pi" style="background:var(--p);border-radius:12px"><svg viewBox="0 0 240 240" style="width:32px"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/><rect x="60" y="154" width="24" height="38" rx="6" fill="url(#G)"/><rect x="92" y="112" width="24" height="80" rx="6" fill="url(#G)" opacity=".68"/><rect x="124" y="70" width="24" height="122" rx="6" fill="#FFF"/><path d="M 52,180 C 66,162 82,134 100,118 C 118,102 136,74 160,56" fill="none" stroke="url(#T)" stroke-width="5" stroke-linecap="round"/><path d="M 174,40 L 170,54 L 158,58 L 170,62 L 174,76 L 178,62 L 190,58 L 178,54 Z" fill="#2D7FF9"/></svg></div><span class="pl" style="color:var(--a);font-weight:600">CrafterIQ</span></div>
+      <div class="pa"><div class="pi gi or"></div><span class="pl">Slack</span></div>
+      <div class="pa"><div class="pi gi tl"></div><span class="pl">Notion</span></div>
+      <div class="pa"><div class="pi gi"></div><span class="pl">Settings</span></div>
+      <div class="pa"><div class="pi gi bl"></div><span class="pl">Salesforce</span></div>
+      <div class="pa"><div class="pi gi pu"></div><span class="pl">Teams</span></div>
+      <div class="pa"><div class="pi gi gn"></div><span class="pl">Sheets</span></div>
+      <div class="pa"><div class="pi gi or"></div><span class="pl">HubSpot</span></div>
+    </div></div>
+  </div>
+</div>
+<div class="divider"></div>
+
+<!-- 06 STORE -->
+<div class="s">
+  <p class="s-label">06 / Store Listing</p>
+  <h2 class="s-title">App Store &amp; Play Store</h2>
+  <div class="flex-center" style="margin-top:28px">
+    <div class="sl-card"><div class="sl-h"><div class="sl-ic" style="background:var(--p)"><svg viewBox="0 0 240 240" style="width:44px"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/><rect x="60" y="154" width="24" height="38" rx="6" fill="url(#G)"/><rect x="92" y="112" width="24" height="80" rx="6" fill="url(#G)" opacity=".68"/><rect x="124" y="70" width="24" height="122" rx="6" fill="#FFF"/><path d="M 52,180 C 66,162 82,134 100,118 C 118,102 136,74 160,56" fill="none" stroke="url(#T)" stroke-width="4.5" stroke-linecap="round"/><path d="M 174,40 L 170,54 L 158,58 L 170,62 L 174,76 L 178,62 L 190,58 L 178,54 Z" fill="#2D7FF9"/></svg></div><div class="sl-info"><h4>Crafter<b>IQ</b></h4><div class="dv">CrafterIQ Inc.</div><div class="rt"><span class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.8 (2.1K)</div></div></div><div class="sl-btn">GET</div></div>
+  </div>
+</div>
+<div class="divider"></div>
+
+<!-- 07 COLLATERAL -->
+<div class="s" id="collateral">
+  <p class="s-label">07 / Collateral</p>
+  <h2 class="s-title">Business Card, Email, Social, Splash</h2>
+  <p class="s-desc">Every professional touchpoint with the V2 mark.</p>
+  <div class="flex-center" style="margin-bottom:48px">
+    <div class="bc"><div class="bc-logo"><svg class="bm" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/><rect x="60" y="154" width="24" height="38" rx="6" fill="url(#G)"/><rect x="92" y="112" width="24" height="80" rx="6" fill="url(#G)" opacity=".68"/><rect x="124" y="70" width="24" height="122" rx="6" fill="#FFF"/><path d="M 52,180 C 66,162 82,134 100,118 C 118,102 136,74 160,56" fill="none" stroke="url(#T)" stroke-width="4.5" stroke-linecap="round"/><path d="M 174,40 L 170,54 L 158,58 L 170,62 L 174,76 L 178,62 L 190,58 L 178,54 Z" fill="#2D7FF9"/></svg><span class="bn">Crafter<b>IQ</b></span></div><div class="bc-tag">Intelligence, Crafted.</div><div class="bc-det"><strong>Arun Teja Lonka</strong><br>arun@crafteriq.com</div></div>
+  </div>
+  <div class="g2" style="margin-bottom:48px">
+    <div><div class="es"><svg class="em" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#1B2B65" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 54,212 L 36,238 L 80,212" fill="#1B2B65"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#1B2B65"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/><circle cx="172" cy="57.5" r="2.2" fill="#5AB0FF" opacity=".6"/></svg><div class="es-info"><div class="en">Crafter<b>IQ</b></div><div class="et">Arun Teja Lonka &middot; arun@crafteriq.com</div><div class="el">app.crafteriq.cloud</div><div class="etag">Intelligence, Crafted.</div></div></div></div>
+    <div><div class="og"><svg class="om" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 54,212 L 36,238 L 80,212" fill="#FFF"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFF"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/></svg><span class="ow">Crafter<b>IQ</b></span><span class="ot">Intelligence, Crafted.</span></div></div>
+  </div>
+  <div class="flex-center">
+    <div class="ld"><svg class="lm" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 54,212 L 36,238 L 80,212" fill="#FFF"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFF"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/></svg><div class="lw">Crafter<b>IQ</b></div><div class="lt2">Intelligence, Crafted.</div><div class="ld-bar"><div class="ld-bar-fill"></div></div></div>
+  </div>
+</div>
+
+<div class="site-footer">
+  <div class="sf-logo">
+    <svg viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M 54,212 L 36,238 L 80,212" fill="#FFF"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFF"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/></svg>
+    <span>Crafter<b>IQ</b></span>
+  </div>
+  <div class="sf-tagline">Intelligence, Crafted.</div>
+  <div class="sf-links"><a href="#">Brand Guidelines</a><a href="#">Logo Downloads</a><a href="#">Color Palette</a><a href="https://app.crafteriq.cloud">Launch App</a></div>
+  <div class="sf-copy">&copy; 2025 CrafterIQ Inc. All rights reserved.</div>
+</div>
+<script>
+function dlSvg(type){
+  var defs='<defs>'+
+    '<linearGradient id="G" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#2068E0"/><stop offset="40%" stop-color="#2D7FF9"/><stop offset="100%" stop-color="#5AB0FF"/></linearGradient>'+
+    '<linearGradient id="S" x1="0" y1="0" x2=".15" y2="1"><stop offset="0%" stop-color="#1F3375"/><stop offset="50%" stop-color="#1B2B65"/><stop offset="100%" stop-color="#142050"/></linearGradient>'+
+    '<linearGradient id="T" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#5AB0FF"/><stop offset="100%" stop-color="#2D7FF9"/></linearGradient>'+
+    '<linearGradient id="SG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5AB0FF"/><stop offset="100%" stop-color="#2D7FF9"/></linearGradient>'+
+    '<style>@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap");</style>'+
+  '</defs>';
+
+  var markLight=
+    '<path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="url(#S)" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>'+
+    '<path d="M 150,42 L 74,42 Q 42,42 42,76 L 42,164 Q 42,198 74,198 L 150,198" fill="none" stroke="#2A3F8F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".18"/>'+
+    '<path d="M 140,28 L 70,28 Q 26,28 26,72 L 26,100" fill="none" stroke="#3A5099" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity=".25"/>'+
+    '<path d="M 54,212 L 36,238 L 80,212" fill="url(#S)"/>'+
+    '<path d="M 58,212 L 48,228 L 76,212" fill="#2A3F8F" opacity=".12"/>'+
+    '<rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/>'+
+    '<rect x="58" y="154" width="5" height="38" rx="2.5" fill="#5AB0FF" opacity=".28"/>'+
+    '<rect x="76" y="154" width="2" height="38" rx="1" fill="#1B2B65" opacity=".08"/>'+
+    '<rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/>'+
+    '<rect x="89" y="112" width="5" height="80" rx="2.5" fill="#5AB0FF" opacity=".22"/>'+
+    '<rect x="107" y="112" width="2" height="80" rx="1" fill="#1B2B65" opacity=".06"/>'+
+    '<rect x="120" y="70" width="23" height="122" rx="5.5" fill="#1B2B65"/>'+
+    '<rect x="120" y="70" width="5" height="122" rx="2.5" fill="#2A3F8F" opacity=".2"/>'+
+    '<rect x="138" y="70" width="2" height="122" rx="1" fill="#0F1A3E" opacity=".1"/>'+
+    '<path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/>'+
+    '<polygon points="158,56 150,62 153,70" fill="#2D7FF9" opacity=".65"/>'+
+    '<path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="url(#SG)"/>'+
+    '<circle cx="172" cy="57.5" r="2.2" fill="#FFF" opacity=".5"/>'+
+    '<path d="M 190,78 L 189,82.5 L 184.5,84 L 189,85.5 L 190,90 L 191,85.5 L 195.5,84 L 191,82.5 Z" fill="#2D7FF9" opacity=".35"/>'+
+    '<circle cx="182" cy="34" r="1.4" fill="#5AB0FF" opacity=".25"/>';
+
+  var markDark=
+    '<path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>'+
+    '<path d="M 150,42 L 74,42 Q 42,42 42,76 L 42,164 Q 42,198 74,198 L 150,198" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>'+
+    '<path d="M 140,28 L 70,28 Q 26,28 26,72 L 26,100" fill="none" stroke="rgba(255,255,255,.2)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>'+
+    '<path d="M 54,212 L 36,238 L 80,212" fill="#FFF"/>'+
+    '<rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#G)"/>'+
+    '<rect x="58" y="154" width="5" height="38" rx="2.5" fill="#5AB0FF" opacity=".28"/>'+
+    '<rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#G)" opacity=".68"/>'+
+    '<rect x="89" y="112" width="5" height="80" rx="2.5" fill="#5AB0FF" opacity=".22"/>'+
+    '<rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFF"/>'+
+    '<rect x="120" y="70" width="5" height="122" rx="2.5" fill="rgba(255,255,255,.15)"/>'+
+    '<path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="url(#T)" stroke-width="3.5" stroke-linecap="round"/>'+
+    '<polygon points="158,56 150,62 153,70" fill="#2D7FF9" opacity=".65"/>'+
+    '<path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="url(#SG)"/>'+
+    '<circle cx="172" cy="57.5" r="2.2" fill="#FFF" opacity=".5"/>'+
+    '<path d="M 190,78 L 189,82.5 L 184.5,84 L 189,85.5 L 190,90 L 191,85.5 L 195.5,84 L 191,82.5 Z" fill="#2D7FF9" opacity=".35"/>'+
+    '<circle cx="182" cy="34" r="1.4" fill="#5AB0FF" opacity=".25"/>';
+
+  var svg, name;
+  if(type==='mark'){
+    svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">'+defs+markLight+'</svg>';
+    name='crafteriq-mark.svg';
+  } else if(type==='light-full'){
+    svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" width="560" height="120">'+defs+
+      '<g transform="translate(6,4) scale(0.46)">'+markLight+'</g>'+
+      '<text x="126" y="62" font-family="Inter,Helvetica Neue,Arial,sans-serif" font-size="44" font-weight="500" fill="#1B2B65" letter-spacing="-0.8">'+
+      '<tspan>Crafter</tspan><tspan font-weight="700" fill="#2D7FF9">IQ</tspan></text>'+
+      '<text x="127" y="82" font-family="Inter,Helvetica Neue,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#94A3B8" letter-spacing="2.8">Intelligence, Crafted.</text>'+
+    '</svg>';
+    name='crafteriq-full-light.svg';
+  } else {
+    svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" width="560" height="120">'+defs+
+      '<g transform="translate(6,4) scale(0.46)">'+markDark+'</g>'+
+      '<text x="126" y="62" font-family="Inter,Helvetica Neue,Arial,sans-serif" font-size="44" font-weight="500" fill="#FFFFFF" letter-spacing="-0.8">'+
+      '<tspan>Crafter</tspan><tspan font-weight="700" fill="#2D7FF9">IQ</tspan></text>'+
+      '<text x="127" y="82" font-family="Inter,Helvetica Neue,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#94A3B8" letter-spacing="2.8">Intelligence, Crafted.</text>'+
+    '</svg>';
+    name='crafteriq-full-dark.svg';
+  }
+  var blob=new Blob([svg],{type:'image/svg+xml'});
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=name;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(a.href);
+}
+</script>
+</body>
+</html>

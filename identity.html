@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrafterIQ Brand Identity</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #1B2B65;
+    --accent: #2D7FF9;
+    --dark: #1A1A2E;
+    --slate: #94A3B8;
+    --light: #F5F6FA;
+    --white: #FFFFFF;
+    --border: #E2E8F0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--dark);
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #0F1A3E 0%, #1B2B65 45%, #0D1226 100%);
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(45,127,249,0.12) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 6s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+    50% { transform: translate(-50%, -50%) scale(1.15); opacity: 0.7; }
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(45,127,249,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(45,127,249,0.03) 1px, transparent 1px);
+    background-size: 80px 80px;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    opacity: 0;
+    animation: fadeUp 1.2s 0.3s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .logo-mark-hero { width: 160px; height: 160px; margin: 0 auto 40px; }
+
+  .hero-wordmark {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 72px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: -2px;
+    margin-bottom: 16px;
+  }
+
+  .hero-wordmark span { font-weight: 700; color: var(--accent); }
+
+  .hero-tagline {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--slate);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    animation: bob 2s ease-in-out infinite;
+    z-index: 2;
+  }
+
+  .scroll-hint span {
+    font-size: 11px;
+    color: var(--slate);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .scroll-hint svg { width: 20px; height: 20px; stroke: var(--slate); }
+
+  @keyframes bob {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(8px); }
+  }
+
+  section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 40px;
+  }
+
+  .section-label {
+    font-family: 'Instrument Serif', serif;
+    font-size: 13px;
+    color: var(--accent);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-family: 'Instrument Serif', serif;
+    font-size: 48px;
+    color: var(--dark);
+    letter-spacing: -1px;
+    margin-bottom: 48px;
+    line-height: 1.1;
+  }
+
+  .logo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .logo-card {
+    border-radius: 20px;
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+
+  .logo-card:hover { transform: scale(1.01); }
+  .logo-card.light-bg { background: var(--light); border: 1px solid var(--border); }
+  .logo-card.dark-bg { background: var(--dark); }
+  .logo-card.accent-bg { background: var(--primary); }
+  .logo-card.gradient-bg { background: linear-gradient(135deg, #1B2B65, #2D7FF9); }
+
+  .logo-card-label {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.4;
+  }
+
+  .logo-card.light-bg .logo-card-label { color: var(--dark); }
+  .logo-card.dark-bg .logo-card-label,
+  .logo-card.accent-bg .logo-card-label,
+  .logo-card.gradient-bg .logo-card-label { color: #fff; }
+
+  .logo-in-card { display: flex; align-items: center; gap: 18px; }
+  .logo-in-card .mark { width: 56px; height: 56px; }
+  .logo-in-card .wordmark {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+  }
+  .logo-in-card .wordmark .iq { font-weight: 700; color: var(--accent); }
+  .icon-only .mark { width: 80px; height: 80px; }
+
+  .palette-section {
+    background: var(--light);
+    max-width: 100%;
+    padding: 100px 40px;
+  }
+
+  .palette-section .inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .palette-row { display: flex; gap: 16px; margin-bottom: 16px; }
+
+  .swatch {
+    flex: 1;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .swatch:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+  }
+
+  .swatch-color {
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+    padding: 14px 18px;
+  }
+
+  .swatch-color .name { font-size: 13px; font-weight: 600; letter-spacing: 0.5px; }
+  .swatch-info { background: #fff; padding: 16px 18px; }
+  .swatch-info .hex { font-size: 14px; font-weight: 600; color: var(--dark); margin-bottom: 4px; }
+  .swatch-info .usage { font-size: 12px; color: var(--slate); line-height: 1.4; }
+
+  .swatch-copied {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+
+  .swatch.copied .swatch-copied { opacity: 1; }
+
+  .type-specimen {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+
+  .type-meta {
+    background: var(--light);
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .type-meta .weight-name { font-size: 14px; font-weight: 600; color: var(--dark); margin-bottom: 4px; }
+  .type-meta .weight-value { font-size: 12px; color: var(--slate); }
+
+  .type-sample {
+    padding: 28px 32px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+  }
+
+  .type-sample p {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--dark);
+    line-height: 1.3;
+  }
+
+  .clearspace-demo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    background: var(--light);
+    border-radius: 20px;
+    margin-bottom: 24px;
+  }
+
+  .clearspace-box {
+    position: relative;
+    padding: 40px;
+    border: 2px dashed var(--accent);
+    border-radius: 12px;
+  }
+
+  .clearspace-box .measure {
+    position: absolute;
+    font-size: 11px;
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .clearspace-box .measure.top { top: -20px; left: 50%; transform: translateX(-50%); }
+  .clearspace-box .measure.right { right: -30px; top: 50%; transform: translateY(-50%) rotate(90deg); }
+  .clearspace-box .measure.bottom { bottom: -20px; left: 50%; transform: translateX(-50%); }
+  .clearspace-box .measure.left { left: -30px; top: 50%; transform: translateY(-50%) rotate(-90deg); }
+
+  .clearspace-note { font-size: 14px; color: var(--slate); line-height: 1.6; }
+
+  .app-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+
+  .app-card {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .app-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.06);
+  }
+
+  .app-card-label {
+    padding: 16px 24px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--slate);
+    background: var(--light);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .biz-card { padding: 60px 40px; display: flex; justify-content: center; }
+
+  .biz-card-inner {
+    width: 340px;
+    height: 200px;
+    background: var(--dark);
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+  }
+
+  .biz-card-logo { display: flex; align-items: center; gap: 10px; }
+  .biz-card-logo .mark { width: 30px; height: 30px; }
+  .biz-card-logo .name {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: -0.3px;
+  }
+  .biz-card-logo .name .iq { font-weight: 700; color: var(--accent); }
+  .biz-card-details { color: var(--slate); font-size: 11px; line-height: 1.6; }
+
+  .app-header-demo { padding: 40px; }
+
+  .app-header-bar {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  }
+
+  .app-header-left { display: flex; align-items: center; gap: 10px; }
+  .app-header-left .mark { width: 26px; height: 26px; }
+  .app-header-left .name {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dark);
+    letter-spacing: -0.3px;
+  }
+  .app-header-left .name .iq { font-weight: 700; color: var(--accent); }
+
+  .app-header-nav { display: flex; gap: 24px; }
+  .app-header-nav a {
+    font-size: 13px;
+    color: var(--slate);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    cursor: pointer;
+  }
+  .app-header-nav a:hover { color: var(--dark); }
+  .app-header-nav a.active { color: var(--accent); }
+
+  .app-header-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .favicon-demo {
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .favicon-row { display: flex; align-items: center; gap: 32px; }
+
+  .favicon-item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .favicon-item .size-label { font-size: 11px; color: var(--slate); letter-spacing: 1px; }
+
+  .favicon-box {
+    background: var(--light);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-demo { padding: 40px; display: flex; justify-content: center; }
+
+  .social-card {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1200/630;
+    background: linear-gradient(145deg, #0F1A3E 0%, #1B2B65 45%, #0D1226 100%);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .social-card::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(45,127,249,0.1) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .social-card .mark { width: 52px; height: 52px; position: relative; z-index: 1; }
+  .social-card .wordmark {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: -0.5px;
+    position: relative;
+    z-index: 1;
+  }
+  .social-card .wordmark .iq { font-weight: 700; color: var(--accent); }
+  .social-card .tagline {
+    font-size: 11px;
+    color: var(--slate);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 60px 40px;
+    background: var(--dark);
+    color: var(--slate);
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<!-- Reusable SVG defs -->
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <linearGradient id="ciq-g" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#2D7FF9"/>
+      <stop offset="100%" stop-color="#5AB0FF"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="logo-mark-hero">
+      <svg viewBox="0 0 240 240" width="100%" height="100%">
+        <path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#ciq-g)"/>
+        <rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#ciq-g)" opacity="0.68"/>
+        <rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFFFFF"/>
+        <path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="#2D7FF9" stroke-width="3.5" stroke-linecap="round"/>
+        <path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/>
+        <path d="M 54,212 L 36,238 L 80,212" fill="#FFFFFF"/>
+      </svg>
+    </div>
+    <h1 class="hero-wordmark">Crafter<span>IQ</span></h1>
+    <p class="hero-tagline">Intelligence, Crafted.</p>
+  </div>
+  <div class="scroll-hint">
+    <span>Explore</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </div>
+</section>
+
+<!-- LOGO SYSTEM -->
+<section>
+  <p class="section-label">01 / Logo System</p>
+  <h2 class="section-title">The Mark</h2>
+  <div class="logo-grid">
+    <!-- Primary on light -->
+    <div class="logo-card light-bg">
+      <span class="logo-card-label">Primary / Light</span>
+      <div class="logo-in-card">
+        <svg class="mark" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#1B2B65" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#ciq-g)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#ciq-g)" opacity="0.68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#1B2B65"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="#2D7FF9" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/><path d="M 54,212 L 36,238 L 80,212" fill="#1B2B65"/></svg>
+        <span class="wordmark" style="color: var(--primary)">Crafter<span class="iq">IQ</span></span>
+      </div>
+    </div>
+    <!-- Primary on dark -->
+    <div class="logo-card dark-bg">
+      <span class="logo-card-label">Primary / Dark</span>
+      <div class="logo-in-card">
+        <svg class="mark" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#ciq-g)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#ciq-g)" opacity="0.68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFFFFF"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="#2D7FF9" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/><path d="M 54,212 L 36,238 L 80,212" fill="#FFFFFF"/></svg>
+        <span class="wordmark" style="color: #fff">Crafter<span class="iq">IQ</span></span>
+      </div>
+    </div>
+    <!-- Icon on brand bg -->
+    <div class="logo-card accent-bg icon-only">
+      <span class="logo-card-label">Icon / Brand BG</span>
+      <svg class="mark" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#ciq-g)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#ciq-g)" opacity="0.68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFFFFF"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="#2D7FF9" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/><path d="M 54,212 L 36,238 L 80,212" fill="#FFFFFF"/></svg>
+    </div>
+    <!-- Icon on gradient -->
+    <div class="logo-card gradient-bg icon-only">
+      <span class="logo-card-label">Icon / Gradient</span>
+      <svg class="mark" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="rgba(255,255,255,0.8)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="rgba(255,255,255,0.68)"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFFFFF"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="rgba(255,255,255,0.95)"/><path d="M 54,212 L 36,238 L 80,212" fill="#FFFFFF"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- COLOR PALETTE -->
+<div class="palette-section">
+  <div class="inner">
+    <p class="section-label">02 / Color Palette</p>
+    <h2 class="section-title">Brand Colors</h2>
+    <div class="palette-row">
+      <div class="swatch" onclick="copyHex(this, '#1B2B65')">
+        <div class="swatch-color" style="background: #1B2B65;"><span class="name" style="color: #fff;">Deep Sapphire</span></div>
+        <div class="swatch-info"><div class="hex">#1B2B65</div><div class="usage">Logo, headings, primary CTAs</div></div>
+        <div class="swatch-copied">Copied</div>
+      </div>
+      <div class="swatch" onclick="copyHex(this, '#2D7FF9')">
+        <div class="swatch-color" style="background: #2D7FF9;"><span class="name" style="color: #fff;">Electric Blue</span></div>
+        <div class="swatch-info"><div class="hex">#2D7FF9</div><div class="usage">Interactive, IQ highlight, links</div></div>
+        <div class="swatch-copied">Copied</div>
+      </div>
+      <div class="swatch" onclick="copyHex(this, '#1A1A2E')">
+        <div class="swatch-color" style="background: #1A1A2E;"><span class="name" style="color: #fff;">Graphite</span></div>
+        <div class="swatch-info"><div class="hex">#1A1A2E</div><div class="usage">Body text, dark backgrounds</div></div>
+        <div class="swatch-copied">Copied</div>
+      </div>
+    </div>
+    <div class="palette-row">
+      <div class="swatch" onclick="copyHex(this, '#94A3B8')">
+        <div class="swatch-color" style="background: #94A3B8;"><span class="name" style="color: #fff;">Soft Slate</span></div>
+        <div class="swatch-info"><div class="hex">#94A3B8</div><div class="usage">Secondary text, borders</div></div>
+        <div class="swatch-copied">Copied</div>
+      </div>
+      <div class="swatch" onclick="copyHex(this, '#E2E8F0')">
+        <div class="swatch-color" style="background: #E2E8F0;"><span class="name" style="color: var(--dark);">Mist</span></div>
+        <div class="swatch-info"><div class="hex">#E2E8F0</div><div class="usage">Subtle dividers, borders</div></div>
+        <div class="swatch-copied">Copied</div>
+      </div>
+      <div class="swatch" onclick="copyHex(this, '#F5F6FA')">
+        <div class="swatch-color" style="background: #F5F6FA; border: 1px solid #E2E8F0;"><span class="name" style="color: var(--dark);">Cloud</span></div>
+        <div class="swatch-info"><div class="hex">#F5F6FA</div><div class="usage">Page backgrounds, cards</div></div>
+        <div class="swatch-copied">Copied</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPOGRAPHY -->
+<section>
+  <p class="section-label">03 / Typography</p>
+  <h2 class="section-title">Type System</h2>
+  <div class="type-specimen">
+    <div class="type-meta"><div class="weight-name">Light</div><div class="weight-value">DM Sans 300</div></div>
+    <div class="type-sample"><p style="font-weight: 300; font-size: 28px;">Intelligence, Crafted</p></div>
+  </div>
+  <div class="type-specimen">
+    <div class="type-meta"><div class="weight-name">Regular</div><div class="weight-value">DM Sans 400</div></div>
+    <div class="type-sample"><p style="font-weight: 400; font-size: 28px;">Transform questions into insights</p></div>
+  </div>
+  <div class="type-specimen">
+    <div class="type-meta"><div class="weight-name">Medium</div><div class="weight-value">DM Sans 500</div></div>
+    <div class="type-sample"><p style="font-weight: 500; font-size: 28px;">Crafter<span style="font-weight: 700; color: var(--accent);">IQ</span> Analytics</p></div>
+  </div>
+  <div class="type-specimen">
+    <div class="type-meta"><div class="weight-name">Semi Bold</div><div class="weight-value">DM Sans 600</div></div>
+    <div class="type-sample"><p style="font-weight: 600; font-size: 28px;">Enterprise Sales Intelligence</p></div>
+  </div>
+  <div class="type-specimen">
+    <div class="type-meta"><div class="weight-name">Bold</div><div class="weight-value">DM Sans 700</div></div>
+    <div class="type-sample"><p style="font-weight: 700; font-size: 28px;">Dashboards, Simplified</p></div>
+  </div>
+</section>
+
+<!-- CLEAR SPACE -->
+<section>
+  <p class="section-label">04 / Clear Space</p>
+  <h2 class="section-title">Logo Protection Zone</h2>
+  <div class="clearspace-demo">
+    <div class="clearspace-box">
+      <span class="measure top">1x</span>
+      <span class="measure right">1x</span>
+      <span class="measure bottom">1x</span>
+      <span class="measure left">1x</span>
+      <div class="logo-in-card">
+        <svg class="mark" viewBox="0 0 240 240" style="width:46px;height:46px"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#1B2B65" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#ciq-g)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#ciq-g)" opacity="0.68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#1B2B65"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="#2D7FF9" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/><path d="M 54,212 L 36,238 L 80,212" fill="#1B2B65"/></svg>
+        <span class="wordmark" style="color: var(--primary); font-size: 24px;">Crafter<span class="iq">IQ</span></span>
+      </div>
+    </div>
+  </div>
+  <p class="clearspace-note">Minimum clear space equals the height of the "C" mark (1x unit). No other visual elements, text, or edges should intrude into this zone. Minimum reproduction width: 100px for full logo, 24px for icon only.</p>
+</section>
+
+<!-- APPLICATIONS -->
+<section>
+  <p class="section-label">05 / Applications</p>
+  <h2 class="section-title">In Context</h2>
+  <div class="app-grid">
+    <!-- Business Card -->
+    <div class="app-card">
+      <div class="app-card-label">Business Card</div>
+      <div class="biz-card">
+        <div class="biz-card-inner">
+          <div class="biz-card-logo">
+            <svg class="mark" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#ciq-g)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#ciq-g)" opacity="0.68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFFFFF"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="#2D7FF9" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/><path d="M 54,212 L 36,238 L 80,212" fill="#FFFFFF"/></svg>
+            <span class="name">Crafter<span class="iq">IQ</span></span>
+          </div>
+          <div class="biz-card-details">
+            crafteriq.com<br>
+            Enterprise AI Sales Analytics
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- App Navigation -->
+    <div class="app-card">
+      <div class="app-card-label">App Navigation</div>
+      <div class="app-header-demo">
+        <div class="app-header-bar">
+          <div class="app-header-left">
+            <svg class="mark" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#1B2B65" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#ciq-g)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#ciq-g)" opacity="0.68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#1B2B65"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="#2D7FF9" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/><path d="M 54,212 L 36,238 L 80,212" fill="#1B2B65"/></svg>
+            <span class="name">Crafter<span class="iq">IQ</span></span>
+          </div>
+          <nav class="app-header-nav">
+            <a class="active">Dashboard</a>
+            <a>Ask Crafter</a>
+            <a>Boards</a>
+            <a>Alerts</a>
+          </nav>
+          <div class="app-header-avatar">AT</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Favicon -->
+    <div class="app-card">
+      <div class="app-card-label">Favicon / App Icon</div>
+      <div class="favicon-demo">
+        <div class="favicon-row">
+          <div class="favicon-item">
+            <div class="favicon-box" style="width:64px;height:64px">
+              <svg viewBox="0 0 240 240" style="width:42px;height:42px"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#1B2B65" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#ciq-g)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#ciq-g)" opacity="0.68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#1B2B65"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="#2D7FF9" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/><path d="M 54,212 L 36,238 L 80,212" fill="#1B2B65"/></svg>
+            </div>
+            <span class="size-label">64px</span>
+          </div>
+          <div class="favicon-item">
+            <div class="favicon-box" style="width:40px;height:40px">
+              <svg viewBox="0 0 240 240" style="width:28px;height:28px"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#1B2B65" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#ciq-g)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#ciq-g)" opacity="0.68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#1B2B65"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="#2D7FF9" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/><path d="M 54,212 L 36,238 L 80,212" fill="#1B2B65"/></svg>
+            </div>
+            <span class="size-label">32px</span>
+          </div>
+          <div class="favicon-item">
+            <div class="favicon-box" style="width:24px;height:24px">
+              <svg viewBox="0 0 240 240" style="width:18px;height:18px"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#1B2B65" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#ciq-g)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#ciq-g)" opacity="0.68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#1B2B65"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="#2D7FF9" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/><path d="M 54,212 L 36,238 L 80,212" fill="#1B2B65"/></svg>
+            </div>
+            <span class="size-label">16px</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social OG -->
+    <div class="app-card">
+      <div class="app-card-label">Social / OG Image</div>
+      <div class="social-demo">
+        <div class="social-card">
+          <svg class="mark" viewBox="0 0 240 240"><path d="M 152,28 L 70,28 Q 26,28 26,72 L 26,168 Q 26,212 70,212 L 152,212" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><rect x="58" y="154" width="23" height="38" rx="5.5" fill="url(#ciq-g)"/><rect x="89" y="112" width="23" height="80" rx="5.5" fill="url(#ciq-g)" opacity="0.68"/><rect x="120" y="70" width="23" height="122" rx="5.5" fill="#FFFFFF"/><path d="M 50,180 C 64,162 80,134 98,118 C 116,102 134,74 158,56" fill="none" stroke="#2D7FF9" stroke-width="3.5" stroke-linecap="round"/><path d="M 172,42 L 169,54 L 158,57.5 L 169,61 L 172,73 L 175,61 L 186,57.5 L 175,54 Z" fill="#2D7FF9"/><path d="M 54,212 L 36,238 L 80,212" fill="#FFFFFF"/></svg>
+          <span class="wordmark">Crafter<span class="iq">IQ</span></span>
+          <span class="tagline">Intelligence, Crafted</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="footer">CrafterIQ Brand Identity Guide v1.0</div>
+
+<script>
+function copyHex(el, hex) {
+  navigator.clipboard.writeText(hex);
+  el.classList.add('copied');
+  setTimeout(() => el.classList.remove('copied'), 1200);
+}
+</script>
+</body>
+</html>
